@@ -72,6 +72,14 @@ npm run dev          # :3000
 
 Open **http://localhost:3000**
 
+## Deploy the API to Render
+
+The root `render.yaml` configures the backend service with `backend` as its root
+directory, runs `npm install && npm run build` during deployment, and starts it
+with `npm start`. Create or update the Render service from this Blueprint so the
+TypeScript build runs before the service starts. For a manually configured
+service, use the same root directory, build command, and start command.
+
 ---
 
 ## API
